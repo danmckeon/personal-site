@@ -1,11 +1,12 @@
+import Paper from '@material-ui/core/Paper';
 import React, { Component } from 'react';
 
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <Paper className="about">
         <p>About will go here - mention location Seattle</p>
-      </div>
+      </Paper>
     );
   }
 }
