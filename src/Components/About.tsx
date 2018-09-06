@@ -1,7 +1,7 @@
-import Paper from '@material-ui/core/Paper';
-import React, { Component } from 'react';
+import { Paper } from '@material-ui/core';
+import React from 'react';
 
-class About extends Component {
+export default class About extends React.Component<null, null> {
   render() {
     return (
       <Paper className="about">
@@ -10,5 +10,3 @@ class About extends Component {
     );
   }
 }
-
-export default About;

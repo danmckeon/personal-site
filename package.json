@@ -10,13 +10,10 @@
     "react-scroll": "^1.7.10"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "scripts": {}
 }
