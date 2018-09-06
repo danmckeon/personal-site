@@ -10,6 +10,7 @@
     "react-scroll": "^1.7.10"
   },
   "devDependencies": {
+    "nodemon": "^1.18.4",
     "typescript": "^3.0.3"
   },
   "scripts": {
