@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
-import Nav from './Nav';
-import Intro from './Intro';
-import Portfolio from './Portfolio';
 import About from './About';
 import Contact from './Contact';
+import Intro from './Intro';
+import Nav from './Nav';
+import Portfolio from './Portfolio';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="app">
@@ -19,5 +18,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

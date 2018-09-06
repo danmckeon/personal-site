@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 // };
 
 // @injectSheet(styles)
-class Intro extends Component {
+export default class Intro extends Component {
   render() {
     return (
       <Paper className="intro">
@@ -27,5 +27,3 @@ class Intro extends Component {
     );
   }
 }
-
-export default Intro;

@@ -1,7 +1,7 @@
 import Paper from '@material-ui/core/Paper';
 import React, { Component } from 'react';
 
-class Portfolio extends Component {
+export default class Portfolio extends Component {
   render() {
     return (
       <Paper className="portfolio">
@@ -13,5 +13,3 @@ class Portfolio extends Component {
     );
   }
 }
-
-export default Portfolio;
