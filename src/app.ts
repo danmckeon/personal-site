@@ -1,5 +1,7 @@
-const express =require('express');
+const express = require('express');
 import { Server } from 'http';
+import * as path from 'path';
+
 // import { renderToString } from 'react-dom/server';
 // import { match, BrowserRouter } from 'react-router';
 // import routes from './routes';
@@ -7,9 +9,27 @@ import { Server } from 'http';
 const app = express();
 const server = new Server(app);
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 // universal routing and rendering
 app.get('*', (req, res) => {
-  res.render('index')
+  console.log('req.path', req.path);
+  console.log('req.route', req.route);
+  console.log('req.body', req.body);
+  if (req.path === '/launch-react.js') {
+    console.log('req.path is js file...');
+    require('./launch-react');
+    return;
+  }
+
+  if (req.path === '/') {
+    console.log('index path');
+    res.render('index');
+    return;
+  }
+
   // match({ routes, location: req.url }, (err, redirectLocation, renderProps) => {
   //   // in case of error display the error message
   //   if (err) {
