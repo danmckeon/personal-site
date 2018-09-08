@@ -1,5 +1,5 @@
 import Paper from '@material-ui/core/Paper';
-import React, { Component } from 'react';
+import * as React from 'react';
 // import injectSheet from 'react-jss';
 
 // const styles = {
@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 // };
 
 // @injectSheet(styles)
-export default class Intro extends Component {
+export default class Intro extends React.Component<any, any> {
   render() {
     return (
       <Paper className="intro">

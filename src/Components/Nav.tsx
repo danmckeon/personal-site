@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 
-export default class Nav extends Component {
+export default class Nav extends React.Component<any, any> {
   render() {
     return (
       <div className="nav">

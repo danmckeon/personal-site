@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
@@ -9,7 +9,7 @@
     "pretty": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    // "esModuleInterop": true,
+    "esModuleInterop": true,
 
     "removeComments": false,
     "noImplicitAny": false,
@@ -21,7 +21,7 @@
 
     // see https://github.com/Microsoft/TypeScript/issues/25260
     // can probably remove once we upgrade to mui-1.x?
-    // "keyofStringsOnly": true,
+    "keyofStringsOnly": true,
 
     "jsx": "react"
   },

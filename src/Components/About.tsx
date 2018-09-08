@@ -1,7 +1,7 @@
 import { Paper } from '@material-ui/core';
-import { Component } from 'react';
+import * as React from 'react';
 
-export default class About extends Component<any, any> {
+export default class About extends React.Component<any, any> {
   render() {
     return (
       <Paper className="about">
