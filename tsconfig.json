@@ -4,28 +4,28 @@
     "module": "commonjs",
     // bunch of commented out lines so that this config matches: https://appdividend.com/2018/03/18/how-to-setup-typescript-with-webpack-4/#Setup_TypeScript_with_Webpack_4
     // ...will add back in slowly as necessary
-    // "moduleResolution": "node",
+    "moduleResolution": "node",
     // "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
 
-    // "pretty": true,
-    // "emitDecoratorMetadata": true,
-    // "experimentalDecorators": true,
-    // "esModuleInterop": true,
+    "pretty": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
 
-    // "removeComments": false,
-    // "noImplicitAny": false,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": false,
-    // "importHelpers": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "importHelpers": true,
 
-    // "typeRoots": ["./node_modules/@types", "./typings"],
+    "typeRoots": ["./node_modules/@types", "./typings"],
 
     // // see https://github.com/Microsoft/TypeScript/issues/25260
     // // can probably remove once we upgrade to mui-1.x?
-    // "keyofStringsOnly": true,
+    "keyofStringsOnly": true,
 
-    // "jsx": "react"
+    "jsx": "react"
   },
   "exclude": ["node_modules"]
 }
